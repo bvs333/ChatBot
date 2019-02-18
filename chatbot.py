@@ -15,7 +15,7 @@ responses = predefined_responses.read()
 responses = responses.lower()
 
 sentences = nltk.sent_tokenize(responses) 
-words = nltk.word_tokenize(responses)
+
 
 lemmeatizer = nltk.stem.WordNetLemmatizer()
 
@@ -75,5 +75,5 @@ while(True):
                 print("Jarvis: "+answer(user_response))
                 sentences.remove(user_response)
     else:
-        print("ROBO: Bye! take care..")   
+        print("Jarvis: Bye! take care..")   
         break
